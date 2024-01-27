@@ -1,11 +1,15 @@
 package com.oluwatunmise.external;
 
 import com.google.gson.annotations.SerializedName;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class OTPSuccessResponseMeta {
   @SerializedName("created_at")
   String created_at;
