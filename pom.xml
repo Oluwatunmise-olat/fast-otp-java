@@ -43,5 +43,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github Oluwatunmise-olat FastOtp Library</name>
+            <url>https://maven.pkg.github.com/Oluwatunmise-olat/fast-otp-java</url>
+        </repository>
+    </distributionManagement>
 
 </project>
