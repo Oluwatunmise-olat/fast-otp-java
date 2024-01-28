@@ -10,10 +10,9 @@ FastOTP-Java-Library facilitates quick and easy development and integration of J
 
 ```bash
 <dependency>
-  <groupId>com.github.oluwatunmise</groupId>
-  <artifactId>Java-FastOTP</artifactId>
+  <groupId>com.oluwatunmise.Java-FastOtp-Library-1.0</groupId>
+  <artifactId>java-fastotp-library-1.0</artifactId>
   <version>1.0</version>
-  <type>jar</type>
 </dependency>
 ```
 
