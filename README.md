@@ -2,6 +2,7 @@
 FastOTP-Java-Library facilitates quick and easy development and integration of Java based applications with the [FASTOTP API](https://fastotp.co/).
 
 Visit [FastOTP](https://fastotp.co/) to get your api key and setup an account.
+[FastOTP Documentation](https://docs.fastotp.co/introduction)
 
 - **Contributors:** **Oluwatunmise Olatunbosun**
 
@@ -14,6 +15,7 @@ Visit [FastOTP](https://fastotp.co/) to get your api key and setup an account.
     - [Generate OTP](#generate-otp)
     - [Validate OTP](#validate-otp)
     - [Get OTP](#get-otp)
+    - [Response Details](#response-details)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -37,7 +39,7 @@ To use Java-FastOtp in your project, follow these steps:
   </dependency>
 </dependencies>
 ```
-2. Make sure you have the necessary repositories configured in your pom.xml:
+2. Configure the repository in your pom.xml:
 ```xml
 <distributionManagement>
   <repository>
@@ -60,8 +62,8 @@ mvn test
 Download latest Java-FastOTP Library jar file from [here](https://github.com/Oluwatunmise-olat/fast-otp-java/releases/latest)
 
 ### Usage
-
 ### Generate OTP
+
 ```java
 import com.oluwatunmise.FastOTP;
 import com.oluwatunmise.external.*;
@@ -139,6 +141,13 @@ public class Main {
   }
 }
 ```
+
+### Response Details
+The `BaseResponse` object provides the following information:
+
+- `statusCode`: HTTP status code received from fast otp.
+- `success`: Indicates whether the response falls within the 200-300 success range.
+- `data`: The actual data returned by fast otp.
 
 ## License
 
